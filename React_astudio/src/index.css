@@ -1,0 +1,119 @@
+/* Existing styles */
+@import url('https://fonts.googleapis.com/css2?family=Neutra+Text&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Neutra Text', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ebebeb;
+  color: #322625;
+}
+
+button {
+  background-color: #fdc936;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Neutra Text', sans-serif;
+}
+
+button:hover {
+  background-color: #c0e3e5;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ebebeb;
+  color: #322625;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabs button.active {
+  background-color: #322625;
+  color: #ebebeb;
+}
+
+.tabs button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.tabs button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tabs button:hover:not(.active) {
+  background-color: #d1d1d1;
+}
+
+/* New styles for header and navigation */
+.header {
+  background-color: #322625;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fdc936;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(192, 227, 229, 0.1);
+}
+
+.nav-link.active {
+  background-color: #c0e3e5;
+  color: #322625;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+}
