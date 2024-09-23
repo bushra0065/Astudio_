@@ -11,7 +11,7 @@ Multi-user support with project assignments
 Installation
 
 Clone the repository:
-
+Create a copy of the .env.example file and rename it to .env:
 Configure the database in the .env file:
 DB_DATABASE=/absolute/path/to/your/project/database/database.sqlite
 Replace /absolute/path/to/your/project with the actual path to your project directory.
